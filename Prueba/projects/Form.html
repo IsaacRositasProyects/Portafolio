@@ -1,0 +1,135 @@
+<html lang="es">
+<head>
+<title>Formulario de Registro</title>
+<link rel="stylesheet" href="Diseño/bootstrap.min.css">
+</head>
+
+<body>
+
+<div class="container">
+<div class="row justify-content-center">
+<div>
+<div class="card shadow-lg p-4">
+<h3 class="mb-4 text-center">Registro</h3>
+
+<form action="Form.html" method="post">
+
+        <!-- Nombre -->
+    <div class="mb-3">
+        <label for="nombre" class="form-label">Nombre completo</label>
+        <input type="text" id="nombre" name="txtnombre" class="form-control" placeholder="Ej. Ruiz Sanchez" required>
+    </div>
+
+        <!-- Email -->
+    <div class="mb-3">
+        <label for="email" class="form-label">Dirección de correo</label>
+        <div class="input-group">
+        <span class="input-group-text">@</span>
+        <input type="email" id="email" name="txtemail" class="form-control" placeholder="Ej. ejemplo@correo.com" required>
+    </div>
+    </div>
+
+    <!-- Telefono -->
+    <div class="mb-3">
+    <label for="telefono" class="form-label">Teléfono</label>
+    <input type="tel" id="telefono" name="txttelefono" class="form-control" placeholder="Ej. 8781234567" required>
+    </div>
+
+        <!-- Contraseña -->
+    <div class="mb-3">
+        <label for="password" class="form-label">Contraseña</label>
+        <input type="password" id="password" name="txtpassword" class="form-control" placeholder="Mínimo 8 caracteres" required>
+    </div>
+
+        <!-- Edad -->
+    <div class="mb-3">
+        <label for="edad" class="form-label">Edad</label>
+        <input type="number" id="edad" name="txtedad" class="form-control">
+    </div>
+
+        <!-- Fecha -->
+    <div class="mb-3">
+        <label for="fecha" class="form-label">Fecha de nacimiento</label>
+        <input type="date" id="fecha" name="txtfecha" class="form-control">
+    </div>
+
+        <!-- Genero -->
+    <div class="mb-3">
+        <label class="form-label">Género</label><br>
+
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="genero" value="masculino">
+            <label class="form-check-label">Masculino</label>
+        </div>
+
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="genero" value="femenino">
+            <label class="form-check-label">Femenino</label>
+        </div>
+
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="genero" value="otro">
+            <label class="form-check-label">Otro</label>
+        </div>
+    </div>
+
+        <!-- Intereses -->
+    <div class="mb-3">
+        <label class="form-label">Intereses</label>
+
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="diseño">
+            <label class="form-check-label">Diseño</label>
+        </div>
+
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="tecnologia">
+            <label class="form-check-label">Tecnología</label>
+        </div>
+
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="negocios">
+            <label class="form-check-label">Negocios</label>
+        </div>
+    </div>
+
+        <!-- País -->
+    <div class="mb-3">
+        <label for="pais" class="form-label">País</label>
+        <select id="pais" name="txtpais" class="form-select">
+            <option value="">Selecciona una opción</option>
+            <option value="mexico">México</option>
+            <option value="usa">Estados Unidos</option>
+            <option value="otro">Otro</option>
+        </select>
+    </div>
+
+        <!-- Comentarios -->
+    <div class="mb-3">
+        <label for="comentarios" class="form-label">Comentarios</label>
+        <textarea id="comentarios" name="txtcomentarios" class="form-control" rows="3"></textarea>
+    </div>
+
+        <!-- Términos y condiciones -->
+    <div class="form-check mb-3">
+        <input class="form-check-input" type="checkbox" required>
+        <label class="form-check-label">
+            Acepto términos y condiciones
+        </label>
+    </div>
+
+        <!-- Botones -->
+    <div class="d-flex justify-content-between">
+        <button type="submit" class="btn btn-dark">Registrar</button>
+        <button type="reset" class="btn btn-outline-secondary">Limpiar</button>
+    </div>
+
+</form>
+
+</div>
+</div>
+</div>
+</div>
+
+</body>
+</html>
